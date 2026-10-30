@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI job market report</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<style>
+  :root { --blue: #1d4ed8; --blue-soft: #3b82f6; --line: #dbeafe; --wash: #eff6ff; }
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 28px; background: #ffffff; color: var(--blue);
+         font-family: "Helvetica Neue", Arial, sans-serif; line-height: 1.5; }
+  .wrap { max-width: 940px; margin: 0 auto; }
+  .eyebrow { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; opacity: .75; }
+  h1 { font-size: 28px; line-height: 1.2; margin: 6px 0 10px; }
+  .summary { font-size: 16px; margin: 0 0 22px; max-width: 760px; }
+  .kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 22px; }
+  .kpi { border: 1px solid var(--line); background: var(--wash); border-radius: 12px; padding: 14px 16px; }
+  .kpi .v { font-size: 26px; font-weight: 700; line-height: 1.1; word-break: break-word; }
+  .kpi .l { font-size: 12px; opacity: .8; margin-top: 4px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 14px; }
+  .card { border: 1px solid var(--line); border-radius: 12px; padding: 16px; background: #fff; }
+  .card.full { grid-column: 1 / -1; }
+  .card h2 { font-size: 15px; margin: 0 0 4px; }
+  .cap { font-size: 13px; margin: 0 0 10px; opacity: .85; }
+  .chart-box { position: relative; height: 260px; }
+  ul.insights { margin: 8px 0 0; padding-left: 20px; }
+  ul.insights li { margin-bottom: 8px; }
+  .takeaway { background: var(--wash); border: 1px solid var(--line); border-radius: 12px; padding: 16px; margin-top: 14px; }
+  .takeaway h2 { font-size: 15px; margin: 0 0 6px; }
+  .foot { margin-top: 20px; font-size: 12px; opacity: .75; }
+  @media (max-width: 720px) { .kpis { grid-template-columns: 1fr 1fr; } .grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="eyebrow">Densight Labs | Islamabad AI Workshop</div>
+  <h1 id="headline"></h1>
+  <p class="summary" id="summary"></p>
+
+  <div class="kpis" id="kpis"></div>
+
+  <div class="grid">
+    <div class="card">
+      <h2>Jobs by role</h2>
+      <p class="cap" id="cap-roles"></p>
+      <div class="chart-box"><canvas id="chart-roles"></canvas></div>
+    </div>
+    <div class="card">
+      <h2>Seniority</h2>
+      <p class="cap" id="cap-seniority"></p>
+      <div class="chart-box"><canvas id="chart-seniority"></canvas></div>
+    </div>
+    <div class="card full">
+      <h2>Most requested skills</h2>
+      <p class="cap" id="cap-skills"></p>
+      <div class="chart-box"><canvas id="chart-skills"></canvas></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>What stands out</h2>
+    <ul class="insights" id="insights"></ul>
+  </div>
+
+  <div class="takeaway">
+    <h2>What this means for you</h2>
+    <div id="takeaway"></div>
+  </div>
+
+  <div class="foot" id="foot"></div>
+</div>
+
+<script id="report-data" type="application/json">{"stats": {"total_jobs": 120, "ai_related_jobs": 30, "ai_related_pct": 25.0, "roles": [{"label": "Data and Analytics", "count": 53}, {"label": "Software Engineering", "count": 31}, {"label": "AI and ML", "count": 14}, {"label": "Marketing and Sales", "count": 13}, {"label": "Operations and Finance", "count": 5}, {"label": "Product and Design", "count": 4}], "top_skills": [{"label": "SQL", "count": 65}, {"label": "Excel", "count": 49}, {"label": "Python", "count": 49}, {"label": "Power BI", "count": 30}, {"label": "Git", "count": 24}, {"label": "React", "count": 22}, {"label": "JavaScript", "count": 19}, {"label": "Machine Learning", "count": 18}, {"label": "Node.js", "count": 16}, {"label": "Google Sheets", "count": 14}], "seniority": [{"label": "Mid", "count": 89}, {"label": "Junior", "count": 12}, {"label": "Senior", "count": 10}, {"label": "Lead", "count": 9}], "top_locations": [{"label": "Karachi", "count": 33}, {"label": "Lahore", "count": 33}, {"label": "Islamabad", "count": 31}, {"label": "Remote", "count": 14}, {"label": "Rawalpindi", "count": 8}], "top_companies": [{"label": "Example Co N", "count": 9}, {"label": "Example Co S", "count": 8}, {"label": "Example Co U", "count": 7}, {"label": "Example Co T", "count": 7}, {"label": "Example Co L", "count": 6}], "ai_by_role": [{"label": "AI and ML", "count": 14}, {"label": "Data and Analytics", "count": 10}, {"label": "Software Engineering", "count": 3}, {"label": "Operations and Finance", "count": 2}, {"label": "Marketing and Sales", "count": 1}]}, "insights": {"headline": "Data and Analytics roles lead this sample, and SQL is the skill to learn first", "summary": "This is a synthetic 120 listing sample used for the workshop, so treat the patterns as an exercise, not market fact. Even so, the shape shows how one run turns rows into a readable story.", "insights": ["Data and Analytics is the largest role group with 53 of 120 listings, about 44 percent.", "SQL appears in 65 listings, ahead of Excel and Python at 49 each.", "Software Engineering follows with 31 listings, while AI and ML roles account for 14.", "25 percent of listings mention AI related terms, so AI skills reach beyond the AI and ML role group.", "Karachi and Lahore have 33 listings each and Islamabad has 31, so the three cities are close.", "Mid level roles make up 89 listings, while Junior roles are only 12, so entry level seats are scarce in this sample."], "chart_captions": {"roles": "Data and Analytics is well ahead of every other group.", "skills": "SQL leads, with Excel and Python tied behind it.", "seniority": "Seniority is guessed from the title, so most roles default to Mid."}, "takeaway": "Learn SQL first, then add Python or Power BI. Build one small project that answers a real question and keep it visible in your applications."}, "meta": {"model": "example (hand written)", "generated": "30 Oct 2026, 21:24 UTC"}}</script>
+<script>
+(function () {
+  var data = JSON.parse(document.getElementById('report-data').textContent);
+  var s = data.stats, ins = data.insights, meta = data.meta;
+
+  function setText(id, text) { document.getElementById(id).textContent = text; }
+
+  setText('headline', ins.headline);
+  setText('summary', ins.summary);
+  setText('cap-roles', ins.chart_captions.roles);
+  setText('cap-skills', ins.chart_captions.skills);
+  setText('cap-seniority', ins.chart_captions.seniority);
+  setText('takeaway', ins.takeaway);
+  setText('foot', 'Counts computed in Python from your Sheet. Commentary written by ' + meta.model +
+          ' on Groq. Generated ' + meta.generated + '. Treat the commentary as a starting point and check it against the numbers.');
+
+  var topRole = s.roles.length ? s.roles[0].label : 'n/a';
+  var topSkill = s.top_skills.length ? s.top_skills[0].label : 'n/a';
+  [[s.total_jobs, 'Jobs analyzed'], [s.ai_related_pct + '%', 'Mention AI terms'],
+   [topRole, 'Biggest role group'], [topSkill, 'Top skill']].forEach(function (k) {
+    var box = document.createElement('div'); box.className = 'kpi';
+    var v = document.createElement('div'); v.className = 'v'; v.textContent = k[0];
+    var l = document.createElement('div'); l.className = 'l'; l.textContent = k[1];
+    box.appendChild(v); box.appendChild(l); document.getElementById('kpis').appendChild(box);
+  });
+
+  var list = document.getElementById('insights');
+  ins.insights.forEach(function (t) {
+    var li = document.createElement('li'); li.textContent = t; list.appendChild(li);
+  });
+
+  if (typeof Chart === 'undefined') {
+    document.querySelectorAll('.chart-box').forEach(function (b) {
+      b.textContent = 'Charts need internet access to load. The numbers above still apply.';
+    });
+    return;
+  }
+
+  var BLUES = ['#1d4ed8', '#2563eb', '#3b82f6', '#60a5fa', '#93c5fd', '#bfdbfe', '#1e40af', '#dbeafe'];
+  Chart.defaults.color = '#1d4ed8';
+  Chart.defaults.font.family = '"Helvetica Neue", Arial, sans-serif';
+
+  function labels(rows) { return rows.map(function (r) { return r.label; }); }
+  function counts(rows) { return rows.map(function (r) { return r.count; }); }
+
+  new Chart(document.getElementById('chart-roles'), {
+    type: 'bar',
+    data: { labels: labels(s.roles), datasets: [{ data: counts(s.roles), backgroundColor: '#2563eb', borderRadius: 6 }] },
+    options: { indexAxis: 'y', maintainAspectRatio: false, plugins: { legend: { display: false } },
+               scales: { x: { grid: { color: '#dbeafe' }, ticks: { precision: 0 } }, y: { grid: { display: false } } } }
+  });
+
+  new Chart(document.getElementById('chart-seniority'), {
+    type: 'doughnut',
+    data: { labels: labels(s.seniority), datasets: [{ data: counts(s.seniority), backgroundColor: BLUES, borderColor: '#ffffff', borderWidth: 2 }] },
+    options: { maintainAspectRatio: false, cutout: '58%', plugins: { legend: { position: 'right' } } }
+  });
+
+  new Chart(document.getElementById('chart-skills'), {
+    type: 'bar',
+    data: { labels: labels(s.top_skills), datasets: [{ data: counts(s.top_skills), backgroundColor: '#3b82f6', borderRadius: 6 }] },
+    options: { maintainAspectRatio: false, plugins: { legend: { display: false } },
+               scales: { y: { grid: { color: '#dbeafe' }, ticks: { precision: 0 } }, x: { grid: { display: false } } } }
+  });
+})();
+</script>
+</body>
+</html>

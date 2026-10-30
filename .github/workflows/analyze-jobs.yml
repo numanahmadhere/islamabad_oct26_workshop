@@ -1,0 +1,48 @@
+name: Analyze jobs
+
+on:
+  # The "Run workflow" button in the Actions tab.
+  workflow_dispatch:
+    inputs:
+      model:
+        description: "Groq model name (check console.groq.com if this one is unavailable)"
+        required: false
+        default: "llama-3.3-70b-versatile"
+
+  # Stretch goal: remove the # characters to run this agent every Monday.
+  # schedule:
+  #   - cron: "0 4 * * 1"
+
+permissions:
+  contents: read
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Get the code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install requirements
+        run: pip install -r requirements.txt
+
+      - name: Run the agent (fetch, count, ask Groq, build report, post to Sheet)
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          APPS_SCRIPT_URL: ${{ secrets.APPS_SCRIPT_URL }}
+          SECRET_TOKEN: ${{ secrets.SECRET_TOKEN }}
+          GROQ_MODEL: ${{ github.event.inputs.model || 'llama-3.3-70b-versatile' }}
+        run: python scripts/analyze.py
+
+      - name: Keep a copy of the report
+        uses: actions/upload-artifact@v4
+        with:
+          name: job-market-report
+          path: out/report.html

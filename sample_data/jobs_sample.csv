@@ -1,0 +1,121 @@
+title,company,location,description,skills,url,date_posted
+Product Manager,Example Co G,Karachi,"Sample listing for the workshop. Skills: SQL, Figma, Excel.","SQL, Figma, Excel",https://example.com/jobs/1000,2026-10-18
+Data Analyst,Example Co Y,Karachi,"Sample listing for the workshop. Skills: Python, SQL, Excel, Power BI.","Python, SQL, Excel, Power BI",https://example.com/jobs/1001,2026-10-24
+DevOps Engineer,Example Co U,Karachi,"Sample listing for the workshop. Skills: Docker, Kubernetes, AWS, Git.","Docker, Kubernetes, AWS, Git",https://example.com/jobs/1002,2026-10-08
+Generative AI Consultant,Example Co N,Islamabad,"Sample listing for the workshop. Skills: LLMs, Python, LangChain. Work involves AI and machine learning.","LLMs, Python, LangChain",https://example.com/jobs/1003,2026-10-07
+Digital Marketing Manager,Example Co A,Islamabad,"Sample listing for the workshop. Skills: Excel, Google Sheets.","Excel, Google Sheets",https://example.com/jobs/1004,2026-10-28
+Business Intelligence Developer,Example Co T,Karachi,"Sample listing for the workshop. Skills: SQL, Power BI, Azure.","SQL, Power BI, Azure",https://example.com/jobs/1005,2026-10-25
+Data Science Intern,Example Co S,Lahore,"Sample listing for the workshop. Skills: Python, SQL, Pandas.","Python, SQL, Pandas",https://example.com/jobs/1006,2026-10-24
+Senior Data Scientist,Example Co D,Karachi,"Sample listing for the workshop. Skills: Python, Machine Learning, Pandas, SQL.","Python, Machine Learning, Pandas, SQL",https://example.com/jobs/1007,2026-10-21
+Data Analyst,Example Co R,Karachi,"Sample listing for the workshop. Skills: Python, SQL, Excel, Power BI.","Python, SQL, Excel, Power BI",https://example.com/jobs/1008,2026-10-11
+SEO Specialist,Example Co W,Lahore,"Sample listing for the workshop. Skills: Excel, Google Sheets.","Excel, Google Sheets",https://example.com/jobs/1009,2026-10-09
+Junior Data Analyst,Example Co N,Islamabad,"Sample listing for the workshop. Skills: Excel, SQL, Google Sheets.","Excel, SQL, Google Sheets",https://example.com/jobs/1010,2026-10-05
+Data Analyst,Example Co R,Islamabad,"Sample listing for the workshop. Skills: Python, SQL, Excel, Power BI. Experience with AI tools is a plus.","Python, SQL, Excel, Power BI",https://example.com/jobs/1011,2026-10-25
+Data Analyst,Example Co L,Islamabad,"Sample listing for the workshop. Skills: Python, SQL, Excel, Power BI.","Python, SQL, Excel, Power BI",https://example.com/jobs/1012,2026-10-03
+SEO Specialist,Example Co N,Remote,"Sample listing for the workshop. Skills: Excel, Google Sheets.","Excel, Google Sheets",https://example.com/jobs/1013,2026-10-14
+DevOps Engineer,Example Co B,Karachi,"Sample listing for the workshop. Skills: Docker, Kubernetes, AWS, Git.","Docker, Kubernetes, AWS, Git",https://example.com/jobs/1014,2026-10-22
+Data Engineer,Example Co E,Islamabad,"Sample listing for the workshop. Skills: Python, SQL, Airflow, AWS, Spark. Experience with AI tools is a plus.","Python, SQL, Airflow, AWS, Spark",https://example.com/jobs/1015,2026-10-09
+Machine Learning Engineer,Example Co Z,Islamabad,"Sample listing for the workshop. Skills: Python, PyTorch, Docker, AWS. Work involves AI and machine learning.","Python, PyTorch, Docker, AWS",https://example.com/jobs/1016,2026-10-25
+Data Science Intern,Example Co N,Karachi,"Sample listing for the workshop. Skills: Python, SQL, Pandas.","Python, SQL, Pandas",https://example.com/jobs/1017,2026-10-16
+Frontend Developer,Example Co B,Lahore,"Sample listing for the workshop. Skills: React, TypeScript, Figma, Git.","React, TypeScript, Figma, Git",https://example.com/jobs/1018,2026-10-01
+Software Engineer,Example Co T,Rawalpindi,"Sample listing for the workshop. Skills: JavaScript, React, Node.js, Git.","JavaScript, React, Node.js, Git",https://example.com/jobs/1019,2026-10-23
+Software Engineer,Example Co T,Lahore,"Sample listing for the workshop. Skills: JavaScript, React, Node.js, Git.","JavaScript, React, Node.js, Git",https://example.com/jobs/1020,2026-10-01
+Digital Marketing Manager,Example Co N,Lahore,"Sample listing for the workshop. Skills: Excel, Google Sheets. Experience with AI tools is a plus.","Excel, Google Sheets",https://example.com/jobs/1021,2026-10-10
+Junior Data Analyst,Example Co T,Remote,"Sample listing for the workshop. Skills: Excel, SQL, Google Sheets. Experience with AI tools is a plus.","Excel, SQL, Google Sheets",https://example.com/jobs/1022,2026-10-01
+SEO Specialist,Example Co R,Lahore,"Sample listing for the workshop. Skills: Excel, Google Sheets.","Excel, Google Sheets",https://example.com/jobs/1023,2026-10-09
+Software Engineer,Example Co U,Islamabad,"Sample listing for the workshop. Skills: JavaScript, React, Node.js, Git.","JavaScript, React, Node.js, Git",https://example.com/jobs/1024,2026-10-24
+AI Engineer,Example Co D,Lahore,"Sample listing for the workshop. Skills: Python, LLMs, LangChain, Docker. Work involves AI and machine learning.","Python, LLMs, LangChain, Docker",https://example.com/jobs/1025,2026-10-07
+AI Product Specialist,Example Co J,Lahore,"Sample listing for the workshop. Skills: LLMs, SQL, Figma. Work involves AI and machine learning.","LLMs, SQL, Figma",https://example.com/jobs/1026,2026-10-27
+Frontend Developer,Example Co M,Islamabad,"Sample listing for the workshop. Skills: React, TypeScript, Figma, Git.","React, TypeScript, Figma, Git",https://example.com/jobs/1027,2026-10-11
+DevOps Engineer,Example Co U,Lahore,"Sample listing for the workshop. Skills: Docker, Kubernetes, AWS, Git.","Docker, Kubernetes, AWS, Git",https://example.com/jobs/1028,2026-10-05
+HR Officer,Example Co E,Karachi,Sample listing for the workshop. Skills: Excel. Experience with AI tools is a plus.,Excel,https://example.com/jobs/1029,2026-10-11
+Data Analyst,Example Co N,Karachi,"Sample listing for the workshop. Skills: Python, SQL, Excel, Power BI.","Python, SQL, Excel, Power BI",https://example.com/jobs/1030,2026-10-22
+Software Engineer,Example Co W,Lahore,"Sample listing for the workshop. Skills: JavaScript, React, Node.js, Git. Experience with AI tools is a plus.","JavaScript, React, Node.js, Git",https://example.com/jobs/1031,2026-10-01
+Business Intelligence Developer,Example Co E,Islamabad,"Sample listing for the workshop. Skills: SQL, Power BI, Azure.","SQL, Power BI, Azure",https://example.com/jobs/1032,2026-10-05
+Data Analyst,Example Co V,Islamabad,"Sample listing for the workshop. Skills: Python, SQL, Excel, Power BI.","Python, SQL, Excel, Power BI",https://example.com/jobs/1033,2026-10-06
+Digital Marketing Manager,Example Co B,Lahore,"Sample listing for the workshop. Skills: Excel, Google Sheets.","Excel, Google Sheets",https://example.com/jobs/1034,2026-10-16
+Software Engineer,Example Co X,Lahore,"Sample listing for the workshop. Skills: JavaScript, React, Node.js, Git.","JavaScript, React, Node.js, Git",https://example.com/jobs/1035,2026-10-06
+Business Intelligence Developer,Example Co J,Lahore,"Sample listing for the workshop. Skills: SQL, Power BI, Azure.","SQL, Power BI, Azure",https://example.com/jobs/1036,2026-10-07
+Full Stack Developer,Example Co S,Islamabad,"Sample listing for the workshop. Skills: JavaScript, Node.js, React, SQL.","JavaScript, Node.js, React, SQL",https://example.com/jobs/1037,2026-10-11
+Data Science Intern,Example Co Z,Lahore,"Sample listing for the workshop. Skills: Python, SQL, Pandas.","Python, SQL, Pandas",https://example.com/jobs/1038,2026-10-21
+Senior Data Scientist,Example Co P,Remote,"Sample listing for the workshop. Skills: Python, Machine Learning, Pandas, SQL.","Python, Machine Learning, Pandas, SQL",https://example.com/jobs/1039,2026-10-27
+Data Engineer,Example Co B,Remote,"Sample listing for the workshop. Skills: Python, SQL, Airflow, AWS, Spark.","Python, SQL, Airflow, AWS, Spark",https://example.com/jobs/1040,2026-10-20
+Digital Marketing Manager,Example Co J,Lahore,"Sample listing for the workshop. Skills: Excel, Google Sheets.","Excel, Google Sheets",https://example.com/jobs/1041,2026-10-08
+Senior Backend Engineer,Example Co N,Islamabad,"Sample listing for the workshop. Skills: Python, Docker, AWS, SQL.","Python, Docker, AWS, SQL",https://example.com/jobs/1042,2026-10-01
+Frontend Developer,Example Co G,Karachi,"Sample listing for the workshop. Skills: React, TypeScript, Figma, Git.","React, TypeScript, Figma, Git",https://example.com/jobs/1043,2026-10-04
+Sales Executive,Example Co Q,Lahore,Sample listing for the workshop. Skills: Excel.,Excel,https://example.com/jobs/1044,2026-10-01
+Operations Analyst,Example Co V,Faisalabad,"Sample listing for the workshop. Skills: Excel, SQL, Power BI.","Excel, SQL, Power BI",https://example.com/jobs/1045,2026-10-25
+Frontend Developer,Example Co C,Lahore,"Sample listing for the workshop. Skills: React, TypeScript, Figma, Git.","React, TypeScript, Figma, Git",https://example.com/jobs/1046,2026-10-22
+Full Stack Developer,Example Co Y,Islamabad,"Sample listing for the workshop. Skills: JavaScript, Node.js, React, SQL.","JavaScript, Node.js, React, SQL",https://example.com/jobs/1047,2026-10-12
+Senior Data Analyst,Example Co Y,Islamabad,"Sample listing for the workshop. Skills: SQL, Tableau, Python, Statistics.","SQL, Tableau, Python, Statistics",https://example.com/jobs/1048,2026-10-07
+UX Designer,Example Co T,Lahore,Sample listing for the workshop. Skills: Figma.,Figma,https://example.com/jobs/1049,2026-10-04
+Full Stack Developer,Example Co C,Karachi,"Sample listing for the workshop. Skills: JavaScript, Node.js, React, SQL.","JavaScript, Node.js, React, SQL",https://example.com/jobs/1050,2026-10-15
+Business Intelligence Developer,Example Co D,Karachi,"Sample listing for the workshop. Skills: SQL, Power BI, Azure.","SQL, Power BI, Azure",https://example.com/jobs/1051,2026-10-18
+Business Intelligence Developer,Example Co S,Karachi,"Sample listing for the workshop. Skills: SQL, Power BI, Azure.","SQL, Power BI, Azure",https://example.com/jobs/1052,2026-10-05
+Sales Executive,Example Co S,Islamabad,Sample listing for the workshop. Skills: Excel.,Excel,https://example.com/jobs/1053,2026-10-15
+Senior Data Analyst,Example Co H,Islamabad,"Sample listing for the workshop. Skills: SQL, Tableau, Python, Statistics.","SQL, Tableau, Python, Statistics",https://example.com/jobs/1054,2026-10-15
+Product Manager,Example Co F,Lahore,"Sample listing for the workshop. Skills: SQL, Figma, Excel.","SQL, Figma, Excel",https://example.com/jobs/1055,2026-10-03
+Frontend Developer,Example Co V,Remote,"Sample listing for the workshop. Skills: React, TypeScript, Figma, Git.","React, TypeScript, Figma, Git",https://example.com/jobs/1056,2026-10-25
+Data Analyst,Example Co V,Islamabad,"Sample listing for the workshop. Skills: Python, SQL, Excel, Power BI.","Python, SQL, Excel, Power BI",https://example.com/jobs/1057,2026-10-19
+Software Engineer,Example Co Z,Karachi,"Sample listing for the workshop. Skills: JavaScript, React, Node.js, Git. Experience with AI tools is a plus.","JavaScript, React, Node.js, Git",https://example.com/jobs/1058,2026-10-14
+AI Product Specialist,Example Co N,Karachi,"Sample listing for the workshop. Skills: LLMs, SQL, Figma. Work involves AI and machine learning.","LLMs, SQL, Figma",https://example.com/jobs/1059,2026-10-09
+Business Intelligence Developer,Example Co W,Islamabad,"Sample listing for the workshop. Skills: SQL, Power BI, Azure. Experience with AI tools is a plus.","SQL, Power BI, Azure",https://example.com/jobs/1060,2026-10-05
+Senior Backend Engineer,Example Co U,Rawalpindi,"Sample listing for the workshop. Skills: Python, Docker, AWS, SQL.","Python, Docker, AWS, SQL",https://example.com/jobs/1061,2026-10-15
+Generative AI Consultant,Example Co Q,Rawalpindi,"Sample listing for the workshop. Skills: LLMs, Python, LangChain. Work involves AI and machine learning.","LLMs, Python, LangChain",https://example.com/jobs/1062,2026-10-10
+Junior Data Analyst,Example Co U,Karachi,"Sample listing for the workshop. Skills: Excel, SQL, Google Sheets.","Excel, SQL, Google Sheets",https://example.com/jobs/1063,2026-10-16
+Software Engineer,Example Co U,Islamabad,"Sample listing for the workshop. Skills: JavaScript, React, Node.js, Git.","JavaScript, React, Node.js, Git",https://example.com/jobs/1064,2026-10-19
+Full Stack Developer,Example Co X,Islamabad,"Sample listing for the workshop. Skills: JavaScript, Node.js, React, SQL.","JavaScript, Node.js, React, SQL",https://example.com/jobs/1065,2026-10-23
+Data Analyst,Example Co L,Lahore,"Sample listing for the workshop. Skills: Python, SQL, Excel, Power BI.","Python, SQL, Excel, Power BI",https://example.com/jobs/1066,2026-10-12
+Generative AI Consultant,Example Co H,Islamabad,"Sample listing for the workshop. Skills: LLMs, Python, LangChain. Work involves AI and machine learning.","LLMs, Python, LangChain",https://example.com/jobs/1067,2026-10-17
+Data Analyst,Example Co Q,Karachi,"Sample listing for the workshop. Skills: Python, SQL, Excel, Power BI.","Python, SQL, Excel, Power BI",https://example.com/jobs/1068,2026-10-18
+Data Analyst,Example Co A,Lahore,"Sample listing for the workshop. Skills: Python, SQL, Excel, Power BI.","Python, SQL, Excel, Power BI",https://example.com/jobs/1069,2026-10-23
+Operations Analyst,Example Co F,Remote,"Sample listing for the workshop. Skills: Excel, SQL, Power BI.","Excel, SQL, Power BI",https://example.com/jobs/1070,2026-10-19
+Software Engineer,Example Co Y,Karachi,"Sample listing for the workshop. Skills: JavaScript, React, Node.js, Git.","JavaScript, React, Node.js, Git",https://example.com/jobs/1071,2026-10-09
+Data Analyst,Example Co S,Karachi,"Sample listing for the workshop. Skills: Python, SQL, Excel, Power BI.","Python, SQL, Excel, Power BI",https://example.com/jobs/1072,2026-10-19
+AI Engineer,Example Co G,Lahore,"Sample listing for the workshop. Skills: Python, LLMs, LangChain, Docker. Work involves AI and machine learning.","Python, LLMs, LangChain, Docker",https://example.com/jobs/1073,2026-10-09
+Junior Data Analyst,Example Co E,Remote,"Sample listing for the workshop. Skills: Excel, SQL, Google Sheets.","Excel, SQL, Google Sheets",https://example.com/jobs/1074,2026-10-12
+HR Officer,Example Co L,Karachi,Sample listing for the workshop. Skills: Excel. Experience with AI tools is a plus.,Excel,https://example.com/jobs/1075,2026-10-20
+Senior Data Analyst,Example Co Z,Islamabad,"Sample listing for the workshop. Skills: SQL, Tableau, Python, Statistics.","SQL, Tableau, Python, Statistics",https://example.com/jobs/1076,2026-10-11
+Full Stack Developer,Example Co J,Remote,"Sample listing for the workshop. Skills: JavaScript, Node.js, React, SQL.","JavaScript, Node.js, React, SQL",https://example.com/jobs/1077,2026-10-11
+AI Engineer,Example Co P,Karachi,"Sample listing for the workshop. Skills: Python, LLMs, LangChain, Docker. Work involves AI and machine learning.","Python, LLMs, LangChain, Docker",https://example.com/jobs/1078,2026-10-21
+Sales Executive,Example Co I,Rawalpindi,Sample listing for the workshop. Skills: Excel.,Excel,https://example.com/jobs/1079,2026-10-09
+HR Officer,Example Co W,Karachi,Sample listing for the workshop. Skills: Excel.,Excel,https://example.com/jobs/1080,2026-10-19
+Data Analyst,Example Co S,Lahore,"Sample listing for the workshop. Skills: Python, SQL, Excel, Power BI.","Python, SQL, Excel, Power BI",https://example.com/jobs/1081,2026-10-22
+Junior Data Analyst,Example Co T,Lahore,"Sample listing for the workshop. Skills: Excel, SQL, Google Sheets.","Excel, SQL, Google Sheets",https://example.com/jobs/1082,2026-10-22
+Business Intelligence Developer,Example Co L,Remote,"Sample listing for the workshop. Skills: SQL, Power BI, Azure. Experience with AI tools is a plus.","SQL, Power BI, Azure",https://example.com/jobs/1083,2026-10-07
+Software Engineer,Example Co W,Islamabad,"Sample listing for the workshop. Skills: JavaScript, React, Node.js, Git.","JavaScript, React, Node.js, Git",https://example.com/jobs/1084,2026-10-09
+Sales Executive,Example Co J,Karachi,Sample listing for the workshop. Skills: Excel.,Excel,https://example.com/jobs/1085,2026-10-06
+Generative AI Consultant,Example Co R,Islamabad,"Sample listing for the workshop. Skills: LLMs, Python, LangChain. Work involves AI and machine learning.","LLMs, Python, LangChain",https://example.com/jobs/1086,2026-10-02
+AI Engineer,Example Co B,Remote,"Sample listing for the workshop. Skills: Python, LLMs, LangChain, Docker. Work involves AI and machine learning.","Python, LLMs, LangChain, Docker",https://example.com/jobs/1087,2026-10-02
+QA Engineer,Example Co G,Karachi,"Sample listing for the workshop. Skills: JavaScript, Git.","JavaScript, Git",https://example.com/jobs/1088,2026-10-14
+Frontend Developer,Example Co C,Lahore,"Sample listing for the workshop. Skills: React, TypeScript, Figma, Git. Experience with AI tools is a plus.","React, TypeScript, Figma, Git",https://example.com/jobs/1089,2026-10-11
+Finance Associate,Example Co C,Karachi,Sample listing for the workshop. Skills: Excel.,Excel,https://example.com/jobs/1090,2026-10-01
+Data Engineer,Example Co I,Lahore,"Sample listing for the workshop. Skills: Python, SQL, Airflow, AWS, Spark.","Python, SQL, Airflow, AWS, Spark",https://example.com/jobs/1091,2026-10-25
+Data Science Intern,Example Co O,Karachi,"Sample listing for the workshop. Skills: Python, SQL, Pandas.","Python, SQL, Pandas",https://example.com/jobs/1092,2026-10-15
+Operations Analyst,Example Co U,Lahore,"Sample listing for the workshop. Skills: Excel, SQL, Power BI.","Excel, SQL, Power BI",https://example.com/jobs/1093,2026-10-27
+Data Engineer,Example Co A,Islamabad,"Sample listing for the workshop. Skills: Python, SQL, Airflow, AWS, Spark.","Python, SQL, Airflow, AWS, Spark",https://example.com/jobs/1094,2026-10-04
+HR Officer,Example Co B,Lahore,Sample listing for the workshop. Skills: Excel.,Excel,https://example.com/jobs/1095,2026-10-02
+QA Engineer,Example Co M,Lahore,"Sample listing for the workshop. Skills: JavaScript, Git.","JavaScript, Git",https://example.com/jobs/1096,2026-10-23
+Data Analyst,Example Co N,Lahore,"Sample listing for the workshop. Skills: Python, SQL, Excel, Power BI.","Python, SQL, Excel, Power BI",https://example.com/jobs/1097,2026-10-19
+Software Engineer,Example Co P,Karachi,"Sample listing for the workshop. Skills: JavaScript, React, Node.js, Git.","JavaScript, React, Node.js, Git",https://example.com/jobs/1098,2026-10-04
+Digital Marketing Manager,Example Co S,Remote,"Sample listing for the workshop. Skills: Excel, Google Sheets.","Excel, Google Sheets",https://example.com/jobs/1099,2026-10-03
+Data Analyst,Example Co J,Rawalpindi,"Sample listing for the workshop. Skills: Python, SQL, Excel, Power BI. Experience with AI tools is a plus.","Python, SQL, Excel, Power BI",https://example.com/jobs/1100,2026-10-19
+DevOps Engineer,Example Co K,Remote,"Sample listing for the workshop. Skills: Docker, Kubernetes, AWS, Git.","Docker, Kubernetes, AWS, Git",https://example.com/jobs/1101,2026-10-10
+Data Analyst,Example Co F,Rawalpindi,"Sample listing for the workshop. Skills: Python, SQL, Excel, Power BI.","Python, SQL, Excel, Power BI",https://example.com/jobs/1102,2026-10-17
+Senior Data Scientist,Example Co R,Rawalpindi,"Sample listing for the workshop. Skills: Python, Machine Learning, Pandas, SQL.","Python, Machine Learning, Pandas, SQL",https://example.com/jobs/1103,2026-10-07
+Software Engineer,Example Co F,Lahore,"Sample listing for the workshop. Skills: JavaScript, React, Node.js, Git.","JavaScript, React, Node.js, Git",https://example.com/jobs/1104,2026-10-17
+Operations Analyst,Example Co D,Karachi,"Sample listing for the workshop. Skills: Excel, SQL, Power BI.","Excel, SQL, Power BI",https://example.com/jobs/1105,2026-10-01
+Data Science Intern,Example Co L,Lahore,"Sample listing for the workshop. Skills: Python, SQL, Pandas.","Python, SQL, Pandas",https://example.com/jobs/1106,2026-10-19
+Digital Marketing Manager,Example Co M,Islamabad,"Sample listing for the workshop. Skills: Excel, Google Sheets.","Excel, Google Sheets",https://example.com/jobs/1107,2026-10-05
+NLP Engineer,Example Co L,Karachi,"Sample listing for the workshop. Skills: Python, NLP, TensorFlow. Work involves AI and machine learning.","Python, NLP, TensorFlow",https://example.com/jobs/1108,2026-10-01
+Machine Learning Engineer,Example Co K,Karachi,"Sample listing for the workshop. Skills: Python, PyTorch, Docker, AWS. Work involves AI and machine learning.","Python, PyTorch, Docker, AWS",https://example.com/jobs/1109,2026-10-15
+Senior Data Scientist,Example Co D,Islamabad,"Sample listing for the workshop. Skills: Python, Machine Learning, Pandas, SQL.","Python, Machine Learning, Pandas, SQL",https://example.com/jobs/1110,2026-10-09
+Operations Analyst,Example Co S,Karachi,"Sample listing for the workshop. Skills: Excel, SQL, Power BI.","Excel, SQL, Power BI",https://example.com/jobs/1111,2026-10-21
+Data Analyst,Example Co T,Islamabad,"Sample listing for the workshop. Skills: Python, SQL, Excel, Power BI.","Python, SQL, Excel, Power BI",https://example.com/jobs/1112,2026-10-17
+Data Analyst,Example Co Q,Islamabad,"Sample listing for the workshop. Skills: Python, SQL, Excel, Power BI.","Python, SQL, Excel, Power BI",https://example.com/jobs/1113,2026-10-05
+Senior Data Analyst,Example Co V,Rawalpindi,"Sample listing for the workshop. Skills: SQL, Tableau, Python, Statistics.","SQL, Tableau, Python, Statistics",https://example.com/jobs/1114,2026-10-09
+Product Manager,Example Co Y,Lahore,"Sample listing for the workshop. Skills: SQL, Figma, Excel.","SQL, Figma, Excel",https://example.com/jobs/1115,2026-10-05
+Data Science Intern,Example Co Q,Remote,"Sample listing for the workshop. Skills: Python, SQL, Pandas.","Python, SQL, Pandas",https://example.com/jobs/1116,2026-10-28
+AI Engineer,Example Co G,Karachi,"Sample listing for the workshop. Skills: Python, LLMs, LangChain, Docker. Work involves AI and machine learning.","Python, LLMs, LangChain, Docker",https://example.com/jobs/1117,2026-10-07
+Operations Analyst,Example Co E,Remote,"Sample listing for the workshop. Skills: Excel, SQL, Power BI.","Excel, SQL, Power BI",https://example.com/jobs/1118,2026-10-16
+QA Engineer,Example Co C,Islamabad,"Sample listing for the workshop. Skills: JavaScript, Git.","JavaScript, Git",https://example.com/jobs/1119,2026-10-13
