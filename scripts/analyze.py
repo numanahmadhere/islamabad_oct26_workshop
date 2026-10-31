@@ -80,12 +80,13 @@ def fetch_jobs():
 # ---------------------------------------------------------------------------
 
 COLUMN_ALIASES = {
-    "title": ["title", "job_title", "jobtitle", "position", "position_title", "role", "job_role", "job", "designation", "vacancy", "opening"],
-    "company": ["company", "employer", "organization"],
-    "location": ["location", "city"],
+    "title": ["title", "role_title", "job_title", "jobtitle", "position", "position_title", "job_role", "designation", "vacancy", "opening", "role", "job"],
+    "company": ["company", "employer", "organization", "organisation"],
+    "location": ["city", "location"],
     "description": ["description", "details", "summary"],
     "skills": ["skills", "tags", "requirements"],
-    "seniority": ["seniority", "level", "experience_level"],
+    "seniority": ["level", "seniority", "experience_level"],
+    "role_family": ["role_family", "job_family", "category", "department", "function"],
 }
 
 # First match wins, so more specific categories come first.
@@ -128,9 +129,12 @@ def normalize(job):
     for canonical, aliases in COLUMN_ALIASES.items():
         value = next((str(lowered[a]).strip() for a in aliases if a in lowered and lowered[a]), "")
         if not value and canonical == "title":
-            # Last resort: any column whose name contains one of these words.
-            value = next((str(v).strip() for k, v in lowered.items()
-                          if v and re.search(r"title|position|role|designation|vacanc", k)), "")
+            # Last resort: a column whose name contains title, then position, role and so on. Never an id column.
+            for word in ("title", "position|designation|vacanc|role"):
+                value = next((str(v).strip() for k, v in lowered.items()
+                              if v and not k.endswith("_id") and re.search(word, k)), "")
+                if value:
+                    break
         out[canonical] = value
     return out
 
@@ -182,7 +186,11 @@ def count_jobs(raw_jobs):
         usable += 1
         text = " ".join([job["title"], job["description"], job["skills"]])
 
-        role = classify_role(job["title"]) if classify_role(job["title"]) != "Other" else classify_role(text)
+        if job["role_family"]:
+            family = job["role_family"].replace("_", " ").strip()
+            role = family.upper() if len(family) <= 3 else family[:1].upper() + family[1:]
+        else:
+            role = classify_role(job["title"]) if classify_role(job["title"]) != "Other" else classify_role(text)
         roles[role] += 1
         seniority[classify_seniority(job["title"], job["seniority"])] += 1
         for s in find_skills(text, job["skills"]):
