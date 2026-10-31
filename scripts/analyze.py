@@ -80,7 +80,7 @@ def fetch_jobs():
 # ---------------------------------------------------------------------------
 
 COLUMN_ALIASES = {
-    "title": ["title", "job_title", "position", "role", "job"],
+    "title": ["title", "job_title", "jobtitle", "position", "position_title", "role", "job_role", "job", "designation", "vacancy", "opening"],
     "company": ["company", "employer", "organization"],
     "location": ["location", "city"],
     "description": ["description", "details", "summary"],
@@ -123,10 +123,15 @@ AI_PATTERN = re.compile(
 
 def normalize(job):
     """Rename whatever columns your Sheet has to the names this script expects."""
-    lowered = {re.sub(r"[\s\-]+", "_", str(k).strip().lower()): (v or "") for k, v in job.items()}
+    lowered = {re.sub(r"[^a-z0-9]+", "_", str(k).strip().lower()).strip("_"): (v or "") for k, v in job.items()}
     out = {}
     for canonical, aliases in COLUMN_ALIASES.items():
-        out[canonical] = next((str(lowered[a]).strip() for a in aliases if a in lowered and lowered[a]), "")
+        value = next((str(lowered[a]).strip() for a in aliases if a in lowered and lowered[a]), "")
+        if not value and canonical == "title":
+            # Last resort: any column whose name contains one of these words.
+            value = next((str(v).strip() for k, v in lowered.items()
+                          if v and re.search(r"title|position|role|designation|vacanc", k)), "")
+        out[canonical] = value
     return out
 
 
@@ -191,7 +196,11 @@ def count_jobs(raw_jobs):
             ai_by_role[role] += 1
 
     if usable == 0:
-        sys.exit("No usable rows. Check that your Jobs tab has a column called title (or job_title, position).")
+        columns = sorted({str(k) for j in raw_jobs for k in j.keys() if str(k).strip()})
+        sys.exit("No usable rows. The columns I found in your Jobs tab are: "
+                 + (", ".join(columns) if columns else "(none)")
+                 + ". Row 1 must hold the column names, and one of them must be title (or job_title, position, role). "
+                 "Rename your job title column to title and run again.")
 
     def top(counter, n):
         return [{"label": k, "count": v} for k, v in counter.most_common(n)]
